@@ -19,8 +19,15 @@
                     <li{{#equals path site.docs.faq.link}} class="active"{{/equals}}>
                         <a href="/{{site.locale}}/{{site.docs.faq.link}}/">{{site.docs.faq.text}}</a>
                     </li>
-                    <li{{#equals path site.docs.api.link}} class="active"{{/equals}}>
-                        <a href="{{site.docs.api.link}}">{{site.docs.api.text}}</a>
+                    <li>
+                        <a href="https://nodejs.org/dist/{{ project.currentVersions.lts }}/docs/api/">
+                            {{project.currentVersions.lts}} {{site.docs.api.text}}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{site.docs.api.link}}">
+                            {{project.currentVersions.stable}} {{site.docs.api.text}}
+                        </a>
                     </li>
                 </ul>
             </aside>
